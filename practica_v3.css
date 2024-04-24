@@ -32,7 +32,7 @@ button{
     font-weight: bold;
     padding: 10px 30px;
     border-radius: 5px;
-    border 2px solid rgba(0,0,0,0.3);
+    border 1px solid rgba(0,0,0,0.3);
     color: white;
     background-color: blueviolet;
 }
@@ -45,12 +45,12 @@ button:hover{
     margin: auto;
 }
 
-.color-acento{ color:blueviolet;}
+.woman4it_title{ color:blueviolet;}
 
 /* Hasta aqui los estilos generales*/
 
 /*barra de navegacion*/
-.logo{
+header .logo{
     margin: 0;
     padding: 25px 30px;
     font-weight: bold;
@@ -66,7 +66,7 @@ header .container{
 }
 header nav{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     text-align: center;
     padding-bottom: 25px;
 }
@@ -90,8 +90,168 @@ header a:hover{
     text-align: center;
     flex-direction: column;
     height: 90vh;
-    background-image: linear-gradient(0deg, rgb(0,0,0,0.5), rgb(0,0,0,0.5)), url();
+    background-image: linear-gradient(0deg, rgb(0,0,0,0.5), rgb(0,0,0,0.5)), url("https://www.ibm.com/training/images/homepage-leadspace-small.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
+
+#hero h1{
+    color: white;
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+#somosbejob .container {
+    text-align: center;
+}
+
+#nuestrosprogramas {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#nuestrosprogramas .container {
+    padding: 150px 12px;
+}
+
+#nuestrosprogramas h2 {
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#nuestrosprogramas .cursos {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 1em;
+}
+
+.cursos:first-child {
+    background-image: linear-gradient(0deg, rgb(0,0,0,0.5), rgb(0,0,0,0.5)), url(imagenes/homepage-invest-in-skills.png);
+}
+.cursos:nth-child(2) {
+    background-image: linear-gradient(0deg, rgb(0,0,0,0.5), rgb(0,0,0,0.5)), url(imagenes/homepage-training-offerings.png);
+}
+.cursos:nth-child(3) {
+    background-image: linear-gradient(0deg, rgb(0,0,0,0.6), rgb(0,0,0,0.6)), url(imagenes/Card2.png);
+}
+
+#caracteristicas .container {
+    text-align: center;
+    padding: 150px 12px;
+}
+
+#caracteristicas li {
+    margin: 16px 0px;
+}
+
+#final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 80vh;
+}
+
+#final h2 {
+    font-size: 9vw;
+}
+
+#final button {
+    font-size: 5vw;
+}
+footer {
+    background-color: rgb(230, 230, 230);
+}
+footer p {
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+
+footer .container {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* Media queris */
+
+@media (min-width: 850px) {
+    header {
+        position: fixed;
+        width: 100%;
+        background-color: white;
+    }
+    header .container {
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 30px;
+    }
+    #hero h1 {
+        font-size: 5em;
+    }
+    #somosbejob .container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #somosbejob .texto {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #somosbejob h2 {
+        margin-top: 0px;
+    }
+
+    #somosbejob .img-container {
+        background-image: url("https://skills-static-content-prod-test.s3.us.cloud-object-storage.appdomain.cloud/training/images/whatsnew/cardimage/Card2.png");
+        background-size: cover;
+        background-position: center center;
+        height: 300px;
+        width: 300px;
+        margin: 5em 0 5em 0;
+    }
+
+    #nuestrosprogramas .programas {
+        display: flex;
+        justify-content: center;
+    }
+    #nuestrosprogramas p{
+        display: block;
+        margin-bottom: 30px;
+    }
+    #nuestrosprogramas h2 {
+        font-size: 4em;
+    }
+    #nuestrosprogramas h3 {
+        margin-top: 0;
+    } 
+    #nuestrosprogramas .cursos {
+        padding: 50px;
+    }
+
+    
+
+}
+
+
+
